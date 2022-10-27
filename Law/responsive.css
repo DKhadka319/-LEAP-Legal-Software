@@ -16,49 +16,49 @@
   }
 
   /* Mobile Menu */
-  #menu{
-    display:block;
+  #menu {
+    display: block;
   }
-  
-	#burger {
-		display: block;
-		cursor: pointer;
-	}
-	
-	nav {
-		position: absolute;
-		top: 100px;
-		background: var(--dark-blue);
-		width: 100%;
+
+  #burger {
+    display: block;
+    cursor: pointer;
+  }
+
+  nav {
+    position: absolute;
+    top: 100px;
+    background: var(--dark-blue);
+    width: 100%;
     height: 100%;
-		padding-top: 150px;
-		clip-path: circle(0% at 100% 0);
-		transition: all 500ms ease-in-out;
+    padding-top: 150px;
+    clip-path: circle(0% at 100% 0);
+    transition: all 500ms ease-in-out;
     z-index: 7;
-	}
-	nav.show {
-		clip-path: circle(200% at 100% 0);
-		transition-duration: 300ms;
-	}
-	nav ul {
-		flex-direction: column;
+  }
+  nav.show {
+    clip-path: circle(200% at 100% 0);
+    transition-duration: 300ms;
+  }
+  nav ul {
+    flex-direction: column;
     justify-content: center;
     display: grid;
     cursor: pointer;
-    list-style:none;
-	}
-  nav ul li{
-    margin-top:30px;
+    list-style: none;
   }
-  nav ul li a{
+  nav ul li {
+    margin-top: 30px;
+  }
+  nav ul li a {
     text-decoration: none;
     font-size: 24px;
     border-radius: 5px;
     color: var(--white);
   }
-  nav ul li a:hover{
-    color:var(--light-blue)
-   }
+  nav ul li a:hover {
+    color: var(--light-blue);
+  }
 
   /* Hero Section CTA */
   .hero-image {
@@ -153,7 +153,6 @@
     grid-row-gap: 50px;
     align-items: center;
     padding: 40px 0;
-
   }
 
   .desktop-docusign-img {
@@ -190,9 +189,9 @@
   }
 }
 
-/*  */
-@media (min-width: 768px) and (max-width:1245px) {
- /* Hero Section CTA */
+/* Between Desktop and Mobile */
+@media (min-width: 768px) and (max-width: 1245px) {
+  /* Hero Section CTA */
   .hero-image {
     display: none;
   }
@@ -202,16 +201,54 @@
     justify-content: center;
   }
 
-  .blog-content{
+  .blog-content {
     max-width: 250px;
   }
-  .blog-content img{
+  .blog-content img {
     max-width: 250px;
-
   }
 
   /* Section Sharing Documents*/
-  .sharing-doc-content{
+  .sharing-doc-content {
     padding: 40px 20px;
+  }
+}
+
+/* Mini Mobile  */
+
+@media screen and (max-width: 340px) {
+  /* Hero Section CTA */
+  .top-section {
+    height: 700px;
+  }
+
+  /*  Blog 1  */
+  .blog-content {
+    max-width: 280px;
+  }
+  .blog-content img {
+    max-width: 280px;
+  }
+  .blog-para {
+    max-width: 250px;
+  }
+
+  /* Section Sharing Documents */
+  .desktop-sharing-doc-img img {
+    margin-top: 40px;
+    width: 250px;
+  }
+  .sharing-doc-content {
+    padding: 0 20px 40px 20px;
+  }
+
+  /* Final Content */
+  .mobile-docusign-img {
+    max-width: 220px;
+  }
+  .final-content-title,
+  .final-content-para {
+    width: 250px;
+    margin-left: 60px;
   }
 }
